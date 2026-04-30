@@ -10,12 +10,18 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/cinefilos-style.css" />
   </head>
   <body class="bg-secondary text-center">
     <header>
       <nav
-        class="navbar navbar-expand-lg text-end"
+        class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark text-end"
         style="background-color: #d5c3f7"
       >
         <div class="container py-2">
@@ -42,13 +48,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Certificados</a>
+                <a class="nav-link" href="#trabajos">Web</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#mobile">Mobile</a>
               </li>
             </ul>
           </div>
@@ -60,18 +63,11 @@
         <h1 class="display-1 fw-bold my-5">Portafolio</h1>
       </div>
     </section>
-    <section
-      id="Mis-trabajos"
-      class="my-5 p-5"
-      style="background-color: #96c26b"
-    >
+    <section id="trabajos" class="my-5 p-5" style="background-color: #d7c6f6">
       <h2 class="display-4 fw-bold text-center text-black mb-3">
         Mis trabajos
       </h2>
-      <div
-        class="container fs-4 text-light"
-        style="text-shadow: 2px 2px 8px #3c3c3c"
-      >
+      <div class="container fs-4 text-dark">
         <p>
           Aca pueden encontrar algunos de mis trabajos de diseño web y
           desarrollo de aplicaciones mobile.
@@ -103,7 +99,7 @@
               </p>
               <button
                 type="button"
-                class="btn me-2"
+                class="btn me-2 mb-2"
                 style="outline: 1px solid #d2faaa"
               >
                 <a
@@ -144,7 +140,7 @@
               </p>
               <button
                 type="button"
-                class="btn me-2"
+                class="btn me-2 mb-2"
                 style="outline: 1px solid #d2faaa"
               >
                 <a
@@ -185,7 +181,7 @@
               </p>
               <button
                 type="button"
-                class="btn me-2"
+                class="btn me-2 mb-2"
                 style="outline: 1px solid #d2faaa"
               >
                 <a
@@ -213,7 +209,7 @@
       </div>
     </section>
     <!-- seccion de apps -->
-    <section>
+    <section id="mobile">
       <div class="container py-3 my-3">
         <h1>Cinefilos</h1>
         <p class="fs-4">
@@ -229,7 +225,7 @@
       </div>
     </section>
     <!-- screenshos del app -->
-    <section style="background-color: #d5c3f7">
+    <section style="background-color: #d7c6f6">
       <div class="p-4 container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 p-2">
@@ -274,8 +270,8 @@
       </p>
       <div class="container-fluid row justify-content-center g-3">
         <div
-          class="card col-12 col-sm-6"
-          style="width: 400px; background-color: #d2faaa"
+          class="card col-12 col-sm-6 bg-secondary mobile"
+          style="width: 400px"
         >
           <!-- icono + column(3 hijos) -->
           <a
@@ -290,7 +286,7 @@
               />
             </div>
             <div>
-              <ul style="list-style: none" class="text-secondary">
+              <ul style="list-style: none" class="text-light">
                 <li class="fw-bold">github.com/cinefilos_app</li>
                 <li>Cine - Entretenimiento</li>
                 <li>Flutter development</li>
@@ -299,8 +295,8 @@
           </a>
         </div>
         <div
-          class="card col-12 col-sm-6 offset-lg-1"
-          style="width: 400px; background-color: #d2faaa"
+          class="card col-12 col-sm-6 offset-lg-1 bg-secondary mobile"
+          style="width: 400px"
         >
           <!-- icono + column(3 hijos) -->
           <a
@@ -315,7 +311,7 @@
               />
             </div>
             <div>
-              <ul style="list-style: none" class="text-secondary">
+              <ul style="list-style: none" class="text-light">
                 <li class="fw-bold">Cinefilos - descarga</li>
                 <li>Cine - Entretenimiento</li>
                 <li>55MB</li>
@@ -341,7 +337,7 @@
           <button
             type="submit"
             class="btn btn-light text-dark fw-bold mb-3 p-1"
-            style="background-color: #d5c3f7"
+            style="background-color: #d2faaa"
           >
             Enviar
           </button>
@@ -350,7 +346,7 @@
     </section>
     <hr class="mb-0" />
     <!-- fotter -->
-    <footer class="pb-4">
+    <footer class="pb-4 bg-dark text-light">
       <div class="py-3">
         <h2>Diego Trejos</h2>
         <h3>&copy;Derechos Reservados</h3>
