@@ -2,3 +2,10 @@
     box-shadow: 6px 5px 10px #686767 ;
     
 }
+
+.proyects-banner {
+  background-image: url("../img/banner.webp") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+}
